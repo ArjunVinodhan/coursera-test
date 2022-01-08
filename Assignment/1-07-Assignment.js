@@ -1,19 +1,18 @@
 (function(window){
     const input = prompt("Input a positive number:");
-    var x = input;
-    if (x % 2 == 0){
+    if (input % 2 == 0){
         alert ("Your number is even!");
     }
-    if (x % 2 != 0){
+    if (input % 2 != 0){
         alert ("Your number is odd!");
     }
     let isPrime = true
-    if (x == 1){
+    if (input == 1){
         alert ("1 is neither a prime nor a composite number");
     }
-    else if (x > 1){
-        for (let i = 2; i < x; i++){
-            if (x % i == 0){
+    else if (input > 1){
+        for (let i = 2; i < input; i++){
+            if (input % i == 0){
                 isPrime = false;
                 break;
             }
